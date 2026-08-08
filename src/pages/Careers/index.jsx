@@ -1,9 +1,10 @@
 function Careers(){
     return(
         <>
-            <div className="container py-5">
-                <h1>Careers Page</h1>
-            </div>
+            <section className="container py-5">
+                <h1>Careers</h1>
+                <p>Join our creative and technology team.</p>
+            </section>
         </>
     )
 }

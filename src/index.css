@@ -23,3 +23,11 @@ ul {
 img {
   max-width: 100%;
 }
+
+/* .navbar-toggler{
+  border: none;
+} */
+
+.navbar-toggler:focus {
+  box-shadow: none;
+}

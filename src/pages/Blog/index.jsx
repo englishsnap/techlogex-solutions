@@ -1,9 +1,10 @@
 function Blog(){
     return(
         <>
-            <div className="container py-5">
-                <h1>Blog Page</h1>
-            </div>
+            <section className="container py-5">
+                <h1>Blog</h1>
+                <p>Insights, ideas and resources from TechLogex Solutions.</p>
+            </section>
         </>
     )
 }

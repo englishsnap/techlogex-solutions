@@ -1,9 +1,12 @@
 function Home(){
     return(
         <>
-            <div className="container py-5">
-                <h1>Home Page</h1>
-            </div>
+            <section className="container py-5">
+                <h1>TechLogex Solutions</h1>
+                <p>
+                    Transforming Ideas into Powerful Brands.
+                </p>
+            </section>
         </>
     )
 }

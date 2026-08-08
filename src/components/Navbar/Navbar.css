@@ -1,0 +1,224 @@
+/* =========================
+   Header
+========================= */
+
+.header {
+  padding: 0 35px;
+  height: 70px;
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  background: #ffffff;
+
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+/* =========================
+   Logo
+========================= */
+
+.logo {
+  font-size: 22px;
+  font-weight: 900;
+  color: #0f172a;
+
+  transition: color 0.3s ease;
+}
+
+.logo:hover {
+  color: #2563eb;
+}
+
+/* =========================
+   Navigation
+========================= */
+
+.navbar {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-list {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.navbar-link {
+  display: inline-block;
+
+  font-size: 15px;
+  font-weight: 500;
+
+  color: #334155;
+
+  transition:
+    color 0.3s ease,
+    transform 0.3s ease;
+}
+
+.navbar-link:hover {
+  color: #2563eb;
+}
+
+.navbar-link:focus-visible {
+  outline: 2px solid #2563eb;
+  outline-offset: 4px;
+}
+
+/* Active React Router link */
+
+.navbar-link.active {
+  color: #2563eb;
+}
+
+/* =========================
+   Mobile Button
+========================= */
+
+.mobile-navbar-btn {
+  display: none;
+
+  padding: 0;
+
+  border: none;
+  background: transparent;
+
+  color: #0f172a;
+
+  cursor: pointer;
+
+  z-index: 1001;
+}
+
+.mobile-nav-icon {
+  font-size: 24px;
+}
+
+.close-icon {
+  display: none;
+}
+
+/* =========================
+   Mobile Navigation
+========================= */
+
+@media (max-width: 980px) {
+  .mobile-navbar-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .navbar {
+    position: absolute;
+
+    top: 70px;
+    left: 0;
+
+    width: 100%;
+    height: calc(100dvh - 70px);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: #ffffff;
+
+    transform: translateX(-100%);
+
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+
+    transition:
+      transform 0.4s ease,
+      opacity 0.4s ease,
+      visibility 0.4s ease;
+
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+  }
+
+  .navbar-list {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+  }
+
+  /* Open mobile navigation */
+
+  .header.active .navbar {
+    transform: translateX(0);
+
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+
+  /* Change menu icon */
+
+  .header.active .close-icon {
+    display: block;
+  }
+
+  .header.active .open-icon {
+    display: none;
+  }
+
+  .navbar-cta {
+  margin-top: 0.5rem;
+}
+}
+
+
+/* =========================
+   Let's Talk CTA
+========================= */
+
+.navbar-cta {
+  display: inline-block;
+
+  padding: 8px 20px;
+
+  background: #2563eb;
+  color: #ffffff;
+
+  border: 2px solid #2563eb;
+  border-radius: 6px;
+
+  font-size: 15px;
+  font-weight: 600;
+
+  transition:
+    background-color 0.3s ease,
+    border-color 0.3s ease,
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.navbar-cta:hover {
+  background: #1d4ed8;
+  border-color: #1d4ed8;
+  color: #ffffff;
+
+  transform: translateY(-2px);
+
+  box-shadow: 0 6px 15px rgba(37, 99, 235, 0.25);
+}
+
+.navbar-cta:focus-visible {
+  outline: 2px solid #2563eb;
+  outline-offset: 4px;
+}
