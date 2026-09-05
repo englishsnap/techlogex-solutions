@@ -25,7 +25,9 @@ function Navbar() {
         className="logo"
         onClick={closeMenu}
       >
-        TechLogex Solutions
+        <div className="logo-box">
+          <img src="/images/logo.png" />
+        </div>
       </NavLink>
 
 

@@ -1,0 +1,249 @@
+/* =========================
+   Capabilities
+========================= */
+
+.capabilities {
+  padding: 110px 0;
+
+  background: #ffffff;
+}
+
+
+/* =========================
+   Content
+========================= */
+
+.capabilities-content {
+  max-width: 600px;
+}
+
+.capabilities-content h2 {
+  margin-top: 15px;
+  margin-bottom: 25px;
+
+  color: #0f172a;
+
+  font-size: clamp(2.4rem, 4vw, 3.6rem);
+  font-weight: 800;
+
+  line-height: 1.1;
+}
+
+.capabilities-content h2 span {
+  display: block;
+
+  color: #2563eb;
+}
+
+.capabilities-intro {
+  max-width: 560px;
+
+  margin-bottom: 40px;
+
+  color: #64748b;
+
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+
+/* =========================
+   Capability List
+========================= */
+
+.capabilities-list {
+  border-top: 1px solid #e2e8f0;
+}
+
+.capability-item {
+  display: grid;
+
+  grid-template-columns: 45px 1fr 30px;
+
+  align-items: center;
+
+  gap: 15px;
+
+  padding: 19px 5px;
+
+  border-bottom: 1px solid #e2e8f0;
+
+  color: #0f172a;
+
+  transition:
+    color 0.3s ease,
+    padding-left 0.3s ease;
+}
+
+.capability-item:hover {
+  padding-left: 12px;
+
+  color: #2563eb;
+}
+
+
+.capability-number {
+  color: #94a3b8;
+
+  font-size: 13px;
+  font-weight: 700;
+
+  letter-spacing: 1px;
+}
+
+
+.capability-title {
+  font-size: 17px;
+  font-weight: 650;
+}
+
+
+.capability-arrow {
+  font-size: 20px;
+
+  text-align: right;
+
+  transition: transform 0.3s ease;
+}
+
+.capability-item:hover .capability-arrow {
+  transform: translateX(5px);
+}
+
+
+/* =========================
+   Image
+========================= */
+
+.capabilities-image-wrapper {
+  position: relative;
+
+  min-height: 560px;
+
+  overflow: hidden;
+
+  border-radius: 12px;
+
+  background: #e2e8f0;
+}
+
+
+.capabilities-image {
+  width: 100%;
+  height: 100%;
+
+  min-height: 560px;
+
+  display: block;
+
+  object-fit: cover;
+
+  transition: transform 0.6s ease;
+}
+
+.capabilities-image-wrapper:hover .capabilities-image {
+  transform: scale(1.03);
+}
+
+
+/* =========================
+   Image Badge
+========================= */
+
+.capabilities-image-badge {
+  position: absolute;
+
+  right: 25px;
+  bottom: 25px;
+
+  padding: 18px 22px;
+
+  background: #0f172a;
+  color: #ffffff;
+
+  border-radius: 8px;
+
+  box-shadow:
+    0 15px 35px rgba(15, 23, 42, 0.2);
+}
+
+.capabilities-image-badge span {
+  display: block;
+
+  margin-bottom: 3px;
+
+  color: #60a5fa;
+
+  font-size: 12px;
+  font-weight: 700;
+
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.capabilities-image-badge strong {
+  font-size: 16px;
+}
+
+
+/* =========================
+   Responsive
+========================= */
+
+@media (max-width: 991px) {
+
+  .capabilities {
+    padding: 85px 0;
+  }
+
+  .capabilities-image-wrapper {
+    min-height: 450px;
+
+    margin-top: 25px;
+  }
+
+  .capabilities-image {
+    min-height: 450px;
+  }
+
+}
+
+
+@media (max-width: 576px) {
+
+  .capabilities {
+    padding: 70px 0;
+  }
+
+  .capabilities-content h2 {
+    font-size: 2.5rem;
+  }
+
+  .capabilities-image-wrapper {
+    min-height: 380px;
+  }
+
+  .capabilities-image {
+    min-height: 380px;
+  }
+
+  .capability-item {
+    grid-template-columns: 35px 1fr 25px;
+
+    gap: 10px;
+
+    padding: 17px 2px;
+  }
+
+  .capability-title {
+    font-size: 15px;
+  }
+
+  .capabilities-image-badge {
+    right: 15px;
+    bottom: 15px;
+
+    padding: 14px 17px;
+  }
+
+}

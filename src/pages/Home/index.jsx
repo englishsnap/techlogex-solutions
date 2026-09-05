@@ -1,12 +1,20 @@
+import CallToAction from "../../components/CallToAction";
+import Hero from "../../components/Hero";
+import HeroIntroSection from "../../components/HeroIntroSection";
+import HeroPortfolioPreview from "../../components/HeroPortfolioPreview";
+import HeroServicesPreview from "../../components/HeroServicesPreview";
+import WhyChooseUs from "../../components/WhyChooseUs";
+
+
 function Home(){
     return(
         <>
-            <section className="container py-5">
-                <h1>TechLogex Solutions</h1>
-                <p>
-                    Transforming Ideas into Powerful Brands.
-                </p>
-            </section>
+            <Hero />
+            <HeroIntroSection />
+            <HeroServicesPreview />
+            <WhyChooseUs />
+            <HeroPortfolioPreview />
+            <CallToAction />
         </>
     )
 }

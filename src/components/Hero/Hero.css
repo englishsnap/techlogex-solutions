@@ -1,0 +1,215 @@
+/* =========================
+   Hero Section
+========================= */
+
+.hero {
+  min-height: calc(100vh - 70px);
+
+  display: flex;
+  align-items: center;
+
+  padding: 80px 0;
+
+  background: #f8fafc;
+}
+
+
+/* =========================
+   Eyebrow
+========================= */
+
+.hero-eyebrow {
+  margin-bottom: 20px;
+
+  color: #2563eb;
+
+  font-size: 14px;
+  font-weight: 700;
+
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+
+
+/* =========================
+   Heading
+========================= */
+
+.hero-title {
+  max-width: 650px;
+
+  margin-bottom: 25px;
+
+  color: #0f172a;
+
+  font-size: clamp(2.8rem, 5vw, 4.5rem);
+  font-weight: 800;
+
+  line-height: 1.08;
+}
+
+.hero-title span {
+  display: block;
+  color: #2563eb;
+}
+
+
+/* =========================
+   Description
+========================= */
+
+.hero-description {
+  max-width: 580px;
+
+  margin-bottom: 35px;
+
+  color: #475569;
+
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+
+/* =========================
+   Buttons
+========================= */
+
+.hero-actions {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+
+  flex-wrap: wrap;
+}
+
+.hero-btn {
+  display: inline-block;
+
+  padding: 13px 24px;
+
+  border-radius: 6px;
+
+  font-size: 15px;
+  font-weight: 600;
+
+  transition:
+    transform 0.3s ease,
+    background-color 0.3s ease,
+    color 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+
+/* Primary */
+
+.hero-btn-primary {
+  background: #2563eb;
+  color: #ffffff;
+
+  border: 2px solid #2563eb;
+}
+
+.hero-btn-primary:hover {
+  background: #1d4ed8;
+  border-color: #1d4ed8;
+
+  color: #ffffff;
+
+  transform: translateY(-2px);
+
+  box-shadow: 0 8px 20px rgba(37, 99, 235, 0.25);
+}
+
+
+/* Secondary */
+
+.hero-btn-secondary {
+  background: transparent;
+  color: #0f172a;
+
+  border: 2px solid #cbd5e1;
+}
+
+.hero-btn-secondary:hover {
+  background: #ffffff;
+  border-color: #2563eb;
+
+  color: #2563eb;
+
+  transform: translateY(-2px);
+}
+
+
+/* =========================
+   Hero Visual
+========================= */
+
+.hero-image{
+  display: flex;
+  justify-content: center;
+
+  align-items: center;
+}
+
+.hero-visual{
+  width: 100%;
+  display: block;
+}
+
+
+
+.hero-visual img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 4px;
+}
+
+
+
+
+
+
+/* =========================
+   Responsive
+========================= */
+
+@media (max-width: 991px) {
+
+  .hero {
+    min-height: auto;
+
+    padding: 70px 0;
+  }
+
+  .hero-visual {
+    margin: 30px auto 0;
+  } 
+}
+
+
+@media (max-width: 576px) {
+
+  .hero {
+    padding: 55px 0;
+  }
+
+  .hero-title {
+    font-size: 2.6rem;
+  }
+
+  .hero-description {
+    font-size: 16px;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .hero-btn {
+    text-align: center;
+  }
+
+
+}

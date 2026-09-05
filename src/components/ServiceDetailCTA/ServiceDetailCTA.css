@@ -1,0 +1,277 @@
+/* ========================================
+   Service Detail CTA
+======================================== */
+
+.service-detail-cta {
+    padding: 110px 0;
+
+    background: #0f172a;
+}
+
+
+/* ========================================
+   CTA Container
+======================================== */
+
+.service-detail-cta-inner {
+    position: relative;
+
+    overflow: hidden;
+
+    padding: 80px 60px;
+
+    background: #172554;
+
+    border-radius: 14px;
+
+    text-align: center;
+}
+
+
+/* Decorative circles */
+
+.service-detail-cta-inner::before,
+.service-detail-cta-inner::after {
+    content: "";
+
+    position: absolute;
+
+    border: 1px solid rgba(255, 255, 255, 0.08);
+
+    border-radius: 50%;
+
+    pointer-events: none;
+}
+
+.service-detail-cta-inner::before {
+    width: 350px;
+    height: 350px;
+
+    top: -200px;
+    left: -120px;
+}
+
+.service-detail-cta-inner::after {
+    width: 450px;
+    height: 450px;
+
+    right: -200px;
+    bottom: -300px;
+}
+
+
+/* ========================================
+   Icon
+======================================== */
+
+.service-detail-cta-icon {
+    position: relative;
+
+    z-index: 1;
+
+    width: 65px;
+    height: 65px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin: 0 auto 25px;
+
+    background: #2563eb;
+
+    border-radius: 50%;
+}
+
+.service-detail-cta-icon i {
+    color: #ffffff;
+
+    font-size: 25px;
+}
+
+
+/* ========================================
+   Content
+======================================== */
+
+.service-detail-cta-content {
+    position: relative;
+
+    z-index: 1;
+
+    max-width: 750px;
+
+    margin: 0 auto;
+}
+
+.service-detail-cta-content .section-eyebrow {
+    color: #93c5fd;
+}
+
+.service-detail-cta-content h2 {
+    margin: 15px 0 20px;
+
+    color: #ffffff;
+
+    font-size: clamp(2.4rem, 4vw, 3.7rem);
+    font-weight: 800;
+
+    line-height: 1.1;
+}
+
+.service-detail-cta-content h2 span {
+    display: block;
+
+    color: #60a5fa;
+}
+
+.service-detail-cta-content > p {
+    max-width: 580px;
+
+    margin: 0 auto 30px;
+
+    color: #cbd5e1;
+
+    font-size: 16px;
+
+    line-height: 1.8;
+}
+
+
+/* ========================================
+   Buttons
+======================================== */
+
+.service-detail-cta-actions {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 15px;
+
+    flex-wrap: wrap;
+}
+
+.service-detail-cta-primary,
+.service-detail-cta-secondary {
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    min-height: 48px;
+
+    padding: 12px 24px;
+
+    border-radius: 6px;
+
+    font-size: 14px;
+    font-weight: 700;
+
+    transition:
+        background-color 0.3s ease,
+        color 0.3s ease,
+        border-color 0.3s ease,
+        transform 0.3s ease;
+}
+
+
+/* Primary */
+
+.service-detail-cta-primary {
+    gap: 8px;
+
+    background: #ffffff;
+
+    color: #0f172a;
+}
+
+.service-detail-cta-primary:hover {
+    background: #dbeafe;
+
+    color: #0f172a;
+
+    transform: translateY(-2px);
+}
+
+
+/* Secondary */
+
+.service-detail-cta-secondary {
+    background: transparent;
+
+    color: #ffffff;
+
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.service-detail-cta-secondary:hover {
+    background: rgba(255, 255, 255, 0.08);
+
+    color: #ffffff;
+
+    border-color: rgba(255, 255, 255, 0.6);
+
+    transform: translateY(-2px);
+}
+
+
+/* Focus */
+
+.service-detail-cta-primary:focus-visible,
+.service-detail-cta-secondary:focus-visible {
+    outline: 2px solid #ffffff;
+    outline-offset: 4px;
+}
+
+
+/* ========================================
+   Tablet
+======================================== */
+
+@media (max-width: 991px) {
+
+    .service-detail-cta {
+        padding: 85px 0;
+    }
+
+    .service-detail-cta-inner {
+        padding: 70px 40px;
+    }
+
+}
+
+
+/* ========================================
+   Mobile
+======================================== */
+
+@media (max-width: 576px) {
+
+    .service-detail-cta {
+        padding: 70px 0;
+    }
+
+    .service-detail-cta-inner {
+        padding: 60px 22px;
+    }
+
+    .service-detail-cta-content h2 {
+        font-size: 2.5rem;
+    }
+
+    .service-detail-cta-content > p {
+        font-size: 15px;
+    }
+
+    .service-detail-cta-actions {
+        flex-direction: column;
+    }
+
+    .service-detail-cta-primary,
+    .service-detail-cta-secondary {
+        width: 100%;
+    }
+
+}

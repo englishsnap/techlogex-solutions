@@ -1,12 +1,19 @@
+import AboutCTA from "../../components/AboutCTA";
+import AboutHero from "../../components/AboutHero";
+import AboutIntro from "../../components/AboutIntro";
+import AboutCapabilities from "../../components/AboutCapabilities";
+import AboutOurProcess from "../../components/AboutOurProcess";
+import AboutOurValues from "../../components/AboutOurValues";
+
 function About(){
     return(
         <>
-            <section className="container py-5">
-                <h1>About TechLogex Solutions</h1>
-                <p>
-                    We help businesses build powerful brands and digital experiences.
-                </p>
-            </section>
+           <AboutHero />
+           <AboutIntro />
+           <AboutCapabilities />
+           <AboutOurProcess />
+           <AboutOurValues />
+           <AboutCTA />
         </>
     )
 }

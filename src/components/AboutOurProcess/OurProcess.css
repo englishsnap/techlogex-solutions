@@ -1,0 +1,329 @@
+/* ========================================
+   Our Process
+======================================== */
+
+.our-process {
+    padding: 110px 0;
+    background: #f8fafc;
+}
+
+
+/* ========================================
+   Section Content
+======================================== */
+
+.process-content {
+    max-width: 680px;
+}
+
+.process-content h2 {
+    margin: 15px 0 25px;
+
+    color: #0f172a;
+
+    font-size: clamp(2.4rem, 4vw, 3.6rem);
+    font-weight: 800;
+
+    line-height: 1.1;
+}
+
+.process-content h2 span {
+    display: block;
+    color: #2563eb;
+}
+
+.process-intro {
+    max-width: 620px;
+    margin-bottom: 45px;
+
+    color: #64748b;
+
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+
+/* ========================================
+   Process List
+======================================== */
+
+.process-list {
+    position: relative;
+}
+
+
+/* Connecting Line */
+
+.process-list::before {
+    content: "";
+
+    position: absolute;
+
+    top: 30px;
+    bottom: 30px;
+    left: 25px;
+
+    width: 1px;
+
+    background: #cbd5e1;
+}
+
+
+/* ========================================
+   Process Item
+======================================== */
+
+.process-item {
+    position: relative;
+
+    display: grid;
+    grid-template-columns: 50px 45px 1fr;
+
+    align-items: start;
+
+    gap: 15px;
+
+    padding: 20px 0;
+}
+
+
+/* ========================================
+   Process Icon
+======================================== */
+
+.process-icon-wrapper {
+    position: relative;
+    z-index: 2;
+
+    width: 50px;
+    height: 50px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #ffffff;
+
+    border: 1px solid #bfdbfe;
+    border-radius: 50%;
+}
+
+.process-icon-wrapper i {
+    color: #2563eb;
+
+    font-size: 21px;
+    line-height: 1;
+
+    transition: transform 0.3s ease;
+}
+
+.process-item:hover .process-icon-wrapper i {
+    transform: scale(1.1);
+}
+
+
+/* ========================================
+   Process Number
+======================================== */
+
+.process-number {
+    padding-top: 14px;
+
+    color: #94a3b8;
+
+    font-size: 12px;
+    font-weight: 800;
+
+    letter-spacing: 1px;
+}
+
+
+/* ========================================
+   Process Content
+======================================== */
+
+.process-item-content {
+    padding-top: 4px;
+}
+
+.process-item-content h3 {
+    margin-bottom: 7px;
+
+    color: #0f172a;
+
+    font-size: 20px;
+    font-weight: 700;
+
+    transition: color 0.3s ease;
+}
+
+.process-item-content p {
+    max-width: 480px;
+
+    margin: 0;
+
+    color: #64748b;
+
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+.process-item:hover .process-item-content h3 {
+    color: #2563eb;
+}
+
+
+/* ========================================
+   Supporting Image
+======================================== */
+
+.process-image-wrapper {
+    position: relative;
+
+    min-height: 620px;
+
+    overflow: hidden;
+
+    background: #e2e8f0;
+
+    border-radius: 12px;
+}
+
+.process-image {
+    width: 100%;
+    height: 100%;
+    min-height: 620px;
+
+    display: block;
+
+    object-fit: cover;
+
+    transition: transform 0.6s ease;
+}
+
+.process-image-wrapper:hover .process-image {
+    transform: scale(1.03);
+}
+
+
+/* ========================================
+   Image Card
+======================================== */
+
+.process-image-card {
+    position: absolute;
+
+    left: 25px;
+    bottom: 25px;
+
+    padding: 20px 24px;
+
+    background: #0f172a;
+    color: #ffffff;
+
+    border-radius: 8px;
+
+    box-shadow: 0 15px 35px rgba(15, 23, 42, 0.2);
+}
+
+.process-image-card-label {
+    display: block;
+
+    margin-bottom: 3px;
+
+    color: #60a5fa;
+
+    font-size: 12px;
+    font-weight: 700;
+
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.process-image-card strong {
+    font-size: 20px;
+}
+
+
+/* ========================================
+   Tablet
+======================================== */
+
+@media (max-width: 991px) {
+
+    .our-process {
+        padding: 85px 0;
+    }
+
+    .process-image-wrapper {
+        min-height: 500px;
+
+        margin-top: 20px;
+    }
+
+    .process-image {
+        min-height: 500px;
+    }
+}
+
+
+/* ========================================
+   Mobile
+======================================== */
+
+@media (max-width: 576px) {
+
+    .our-process {
+        padding: 70px 0;
+    }
+
+    .process-content h2 {
+        font-size: 2.5rem;
+    }
+
+    .process-item {
+        grid-template-columns: 45px 35px 1fr;
+
+        gap: 10px;
+    }
+
+    .process-icon-wrapper {
+        width: 45px;
+        height: 45px;
+    }
+
+    .process-icon-wrapper i {
+        font-size: 19px;
+    }
+
+    .process-list::before {
+        left: 22px;
+    }
+
+    .process-item-content h3 {
+        font-size: 18px;
+    }
+
+    .process-item-content p {
+        font-size: 14px;
+    }
+
+    .process-image-wrapper {
+        min-height: 400px;
+    }
+
+    .process-image {
+        min-height: 400px;
+    }
+
+    .process-image-card {
+        left: 15px;
+        bottom: 15px;
+
+        padding: 14px 17px;
+    }
+
+    .process-image-card strong {
+        font-size: 18px;
+    }
+}

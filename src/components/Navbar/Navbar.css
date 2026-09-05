@@ -24,7 +24,7 @@
    Logo
 ========================= */
 
-.logo {
+/* .logo {
   font-size: 22px;
   font-weight: 900;
   color: #0f172a;
@@ -34,8 +34,17 @@
 
 .logo:hover {
   color: #2563eb;
+} */
+
+.logo-box{
+  width: 160px;
+
 }
 
+.logo-box img{
+  width: 100%;
+  object-fit: cover;
+}
 /* =========================
    Navigation
 ========================= */

@@ -1,0 +1,210 @@
+/* =========================
+   About Hero
+========================= */
+
+.about-hero {
+  padding: 110px 0;
+
+  background: #ffffff;
+
+  overflow: hidden;
+}
+
+
+/* =========================
+   Content
+========================= */
+
+.about-hero-content {
+  max-width: 680px;
+}
+
+.about-hero-eyebrow {
+  margin-bottom: 18px;
+
+  color: #2563eb;
+
+  font-size: 14px;
+  font-weight: 700;
+
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+
+
+.about-hero-content h1 {
+  margin-bottom: 25px;
+
+  color: #0f172a;
+
+  font-size: clamp(3rem, 6vw, 5rem);
+  font-weight: 800;
+
+  line-height: 1.05;
+}
+
+
+.about-hero-content h1 span {
+  display: block;
+
+  color: #2563eb;
+}
+
+
+.about-hero-description {
+  max-width: 600px;
+
+  margin-bottom: 35px;
+
+  color: #64748b;
+
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+
+/* =========================
+   Button
+========================= */
+
+.about-hero-button {
+  display: inline-block;
+
+  padding: 14px 28px;
+
+  background: #2563eb;
+  color: #ffffff;
+
+  border: 2px solid #2563eb;
+  border-radius: 6px;
+
+  font-size: 15px;
+  font-weight: 700;
+
+  transition:
+    background-color 0.3s ease,
+    border-color 0.3s ease,
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+
+.about-hero-button:hover {
+  background: #1d4ed8;
+  border-color: #1d4ed8;
+
+  color: #ffffff;
+
+  transform: translateY(-3px);
+
+  box-shadow:
+    0 10px 25px rgba(37, 99, 235, 0.2);
+}
+
+
+/* =========================
+   Visual
+========================= */
+
+.about-hero-visual {
+  position: relative;
+
+  min-height: 420px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+.about-hero-box{
+  width: 100%;
+  display: flex;
+  border-radius: 8px;
+}
+
+.about-hero-img{
+  width: 100%;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+/* Badge */
+
+.about-hero-badge {
+  position: absolute;
+
+  right: 5%;
+  bottom: -4%;
+
+  padding: 18px 22px;
+
+  background: #0f172a;
+  color: #ffffff;
+
+  border-radius: 8px;
+
+  font-size: 13px;
+  font-weight: 700;
+
+  line-height: 1.6;
+
+  letter-spacing: 1px;
+  text-transform: uppercase;
+
+  box-shadow:
+    0 15px 30px rgba(15, 23, 42, 0.15);
+}
+
+
+/* =========================
+   Responsive
+========================= */
+
+@media (max-width: 991px) {
+
+  .about-hero {
+    padding: 90px 0;
+  }
+
+  .about-hero-visual {
+    margin-top: 70px;
+  }
+
+}
+
+
+@media (max-width: 576px) {
+
+  .about-hero {
+    padding: 70px 0;
+  }
+
+  .about-hero-content h1 {
+    font-size: 2.8rem;
+  }
+
+  .about-hero-description {
+    font-size: 16px;
+  }
+
+  .about-hero-visual {
+    min-height: 330px;
+
+    margin-top: 30px;
+  }
+
+
+  .about-hero-badge {
+    right: 0;
+    bottom: 4%;
+
+    padding: 14px 16px;
+
+    font-size: 11px;
+
+    visibility: hidden;
+  }
+
+}

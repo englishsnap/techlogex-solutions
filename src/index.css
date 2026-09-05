@@ -10,6 +10,7 @@ body {
   font-family: "Segoe UI", sans-serif;
   background: #ffffff;
   color: #1e293b;
+  /* overflow-x: hidden; */
 }
 
 a {
@@ -31,3 +32,15 @@ img {
 .navbar-toggler:focus {
   box-shadow: none;
 }
+
+.section-eyebrow {
+    margin-bottom: 0;
+
+    color: #2563eb;
+
+    font-size: 14px;
+    font-weight: 700;
+
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+  }

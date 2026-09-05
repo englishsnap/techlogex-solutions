@@ -1,0 +1,283 @@
+/* ========================================
+   Service Overview
+======================================== */
+
+.service-overview {
+    padding: 110px 0;
+
+    background: #f8fafc;
+}
+
+
+/* ========================================
+   Visual
+======================================== */
+
+.service-overview-visual {
+    position: relative;
+
+    min-height: 380px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    overflow: hidden;
+
+    background: #0f172a;
+
+    border-radius: 12px;
+
+    box-shadow:
+        0 25px 50px rgba(15, 23, 42, 0.12);
+}
+
+
+/* Decorative elements */
+
+.service-overview-visual::before,
+.service-overview-visual::after {
+    content: "";
+
+    position: absolute;
+
+    border: 1px solid rgba(255, 255, 255, 0.1);
+
+    border-radius: 50%;
+}
+
+.service-overview-visual::before {
+    width: 280px;
+    height: 280px;
+}
+
+.service-overview-visual::after {
+    width: 420px;
+    height: 420px;
+}
+
+
+/* ========================================
+   Icon
+======================================== */
+
+.service-overview-icon {
+    position: relative;
+
+    z-index: 2;
+
+    width: 100px;
+    height: 100px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #2563eb;
+
+    border-radius: 50%;
+
+    box-shadow:
+        0 15px 35px rgba(37, 99, 235, 0.3);
+}
+
+.service-overview-icon i {
+    color: #ffffff;
+
+    font-size: 42px;
+}
+
+
+/* ========================================
+   Number
+======================================== */
+
+.service-overview-number {
+    position: absolute;
+
+    top: 25px;
+    left: 30px;
+
+    color: rgba(255, 255, 255, 0.15);
+
+    font-size: 80px;
+    font-weight: 800;
+
+    line-height: 1;
+}
+
+
+/* ========================================
+   Label
+======================================== */
+
+.service-overview-label {
+    position: absolute;
+
+    right: 25px;
+    bottom: 25px;
+
+    color: rgba(255, 255, 255, 0.65);
+
+    font-size: 11px;
+    font-weight: 700;
+
+    letter-spacing: 1.5px;
+
+    text-transform: uppercase;
+}
+
+
+/* ========================================
+   Content
+======================================== */
+
+.service-overview-content {
+    max-width: 650px;
+
+    padding-left: 25px;
+}
+
+.service-overview-content h2 {
+    margin: 15px 0 25px;
+
+    color: #0f172a;
+
+    font-size: clamp(2.4rem, 4vw, 3.5rem);
+    font-weight: 800;
+
+    line-height: 1.1;
+}
+
+.service-overview-content h2 span {
+    display: block;
+
+    color: #2563eb;
+}
+
+.service-overview-text {
+    margin-bottom: 25px;
+
+    color: #64748b;
+
+    font-size: 16px;
+
+    line-height: 1.9;
+}
+
+
+/* ========================================
+   Highlight
+======================================== */
+
+.service-overview-highlight {
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 12px;
+
+    padding: 18px 20px;
+
+    background: #ffffff;
+
+    border-left: 3px solid #2563eb;
+    border-radius: 4px;
+
+    box-shadow:
+        0 8px 25px rgba(15, 23, 42, 0.05);
+}
+
+.service-overview-highlight i {
+    flex-shrink: 0;
+
+    margin-top: 2px;
+
+    color: #2563eb;
+
+    font-size: 18px;
+}
+
+.service-overview-highlight span {
+    color: #334155;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    line-height: 1.6;
+}
+
+
+/* ========================================
+   Tablet
+======================================== */
+
+@media (max-width: 991px) {
+
+    .service-overview {
+        padding: 85px 0;
+    }
+
+    .service-overview-content {
+        max-width: 700px;
+
+        padding-left: 0;
+    }
+
+    .service-overview-visual {
+        max-width: 700px;
+
+        min-height: 350px;
+
+        margin: 0 auto;
+    }
+
+}
+
+
+/* ========================================
+   Mobile
+======================================== */
+
+@media (max-width: 576px) {
+
+    .service-overview {
+        padding: 70px 0;
+    }
+
+    .service-overview-visual {
+        min-height: 300px;
+    }
+
+    .service-overview-icon {
+        width: 80px;
+        height: 80px;
+    }
+
+    .service-overview-icon i {
+        font-size: 32px;
+    }
+
+    .service-overview-number {
+        top: 20px;
+        left: 20px;
+
+        font-size: 60px;
+    }
+
+    .service-overview-label {
+        right: 20px;
+        bottom: 20px;
+
+        font-size: 9px;
+    }
+
+    .service-overview-content h2 {
+        font-size: 2.5rem;
+    }
+
+    .service-overview-text {
+        font-size: 15px;
+    }
+
+}

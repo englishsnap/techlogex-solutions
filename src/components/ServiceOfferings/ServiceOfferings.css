@@ -1,0 +1,200 @@
+/* ========================================
+   Service Offerings
+======================================== */
+
+.service-offerings {
+    padding: 110px 0;
+
+    background: #ffffff;
+}
+
+
+/* ========================================
+   Header
+======================================== */
+
+.service-offerings-header {
+    max-width: 700px;
+
+    margin: 0 auto 55px;
+
+    text-align: center;
+}
+
+.service-offerings-header h2 {
+    margin: 15px 0 20px;
+
+    color: #0f172a;
+
+    font-size: clamp(2.4rem, 4vw, 3.5rem);
+    font-weight: 800;
+
+    line-height: 1.1;
+}
+
+.service-offerings-header h2 span {
+    display: block;
+
+    color: #2563eb;
+}
+
+.service-offerings-header > p:last-child {
+    max-width: 620px;
+
+    margin: 0 auto;
+
+    color: #64748b;
+
+    font-size: 16px;
+
+    line-height: 1.8;
+}
+
+
+/* ========================================
+   Offering Card
+======================================== */
+
+.service-offering-card {
+    height: 100%;
+
+    display: flex;
+
+    gap: 20px;
+
+    padding: 28px 24px;
+
+    background: #ffffff;
+
+    border: 1px solid #e2e8f0;
+    border-radius: 10px;
+
+    transition:
+        transform 0.3s ease,
+        border-color 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.service-offering-card:hover {
+    transform: translateY(-5px);
+
+    border-color: #bfdbfe;
+
+    box-shadow:
+        0 15px 35px rgba(15, 23, 42, 0.08);
+}
+
+
+/* ========================================
+   Icon
+======================================== */
+
+.service-offering-icon {
+    flex: 0 0 50px;
+
+    width: 50px;
+    height: 50px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #eff6ff;
+
+    border-radius: 8px;
+}
+
+.service-offering-icon i {
+    color: #2563eb;
+
+    font-size: 21px;
+
+    line-height: 1;
+}
+
+
+/* ========================================
+   Content
+======================================== */
+
+.service-offering-content {
+    position: relative;
+
+    flex: 1;
+}
+
+.service-offering-number {
+    display: block;
+
+    margin-bottom: 6px;
+
+    color: #94a3b8;
+
+    font-size: 11px;
+    font-weight: 700;
+
+    letter-spacing: 1px;
+}
+
+.service-offering-content h3 {
+    margin-bottom: 10px;
+
+    color: #0f172a;
+
+    font-size: 18px;
+    font-weight: 700;
+
+    line-height: 1.35;
+}
+
+.service-offering-content p {
+    margin: 0;
+
+    color: #64748b;
+
+    font-size: 14px;
+
+    line-height: 1.7;
+}
+
+
+/* ========================================
+   Tablet
+======================================== */
+
+@media (max-width: 991px) {
+
+    .service-offerings {
+        padding: 85px 0;
+    }
+
+    .service-offerings-header {
+        margin-bottom: 45px;
+    }
+
+}
+
+
+/* ========================================
+   Mobile
+======================================== */
+
+@media (max-width: 576px) {
+
+    .service-offerings {
+        padding: 70px 0;
+    }
+
+    .service-offerings-header h2 {
+        font-size: 2.5rem;
+    }
+
+    .service-offerings-header > p:last-child {
+        font-size: 15px;
+    }
+
+    .service-offering-card {
+        padding: 24px 20px;
+    }
+
+}
