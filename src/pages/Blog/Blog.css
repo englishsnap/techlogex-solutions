@@ -70,11 +70,14 @@
 
 .blog-controls {
     display: flex;
+   
 
     align-items: center;
     justify-content: space-between;
 
     gap: 30px;
+
+    
 
     margin-bottom: 50px;
 }
@@ -643,7 +646,18 @@
     }
 
     .blog-controls {
-        align-items: flex-start;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 20px;
+    }
+
+    .blog-controls .filter-buttons, /* Replace with your actual buttons container class/selector */
+    .blog-controls > div:first-child { 
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px; /* Adjust spacing between wrapped buttons */
+        overflow: visible;
+        width: 100%;
     }
 
 }
@@ -657,6 +671,7 @@
 
     .blog-controls {
         flex-direction: column;
+        
 
         align-items: stretch;
 
@@ -690,6 +705,7 @@
 
     .blog-content {
         padding: 55px 0 70px;
+        
     }
 
     .blog-card-content {

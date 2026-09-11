@@ -167,6 +167,30 @@ function Contact(){
 
                             </a>
 
+                            {/* Address */}
+
+                            <a
+                                href={contactData.address.href}
+                                className="contact-info-item"
+                            >
+                                <div className="contact-info-icon">
+
+                                    <i
+                                        className={`bi ${contactData.address.icon}`}
+                                        aria-hidden="true"
+                                    ></i>
+                                </div>
+
+                                <div>
+
+                                    <span>{contactData.address.label}</span>
+
+                                    <strong>{contactData.address.value}</strong>
+                                </div>
+
+                            </a>
+
+
                             {/* Social Media */}
 
 

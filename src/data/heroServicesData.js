@@ -1,6 +1,14 @@
 const heroServicesData = [
-  {
+   {
     id: 1,
+    title: "Research Services",
+    description:
+      "Gain actionable insights with comprehensive market, industry, and academic research tailored to drive your business strategy.",
+    slug: "research-services",
+    img:"/images/hero-service-8.jpg",
+  },
+  {
+    id: 2,
     title: "Logo & Branding",
     description:
       "Build a memorable brand identity with professional logos and visual branding designed for your business.",
@@ -8,7 +16,7 @@ const heroServicesData = [
     img:"/images/hero-service-7.jpg",
   },
   {
-    id: 2,
+    id: 3,
     title: "Graphic Design",
     description:
       "Create engaging visual content for your business, including social media graphics, brochures, business cards, and more.",
@@ -16,7 +24,7 @@ const heroServicesData = [
     img:"/images/hero-service-5.jpg",
   },
   {
-    id: 3,
+    id: 4,
     title: "Business Printing",
     description:
       "Bring your brand to life with professional printing for stationery, brochures, magazines, promotional products, and more.",
@@ -24,7 +32,7 @@ const heroServicesData = [
     img:"/images/hero-service-3.jpg",
   },
   {
-    id: 4,
+    id: 5,
     title: "Website Design",
     description:
       "Build a modern and responsive website that gives your business a professional digital presence.",
@@ -32,7 +40,7 @@ const heroServicesData = [
     img:"/images/hero-service-1.jpg",
   },
   {
-    id: 5,
+    id: 6,
     title: "App Development",
     description:
       "Develop practical and user-friendly applications designed around your business needs.",

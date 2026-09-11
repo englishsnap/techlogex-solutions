@@ -1,6 +1,39 @@
 const serviceOfferedData = [
+
     {
         id: 1,
+        title: "Research Services",
+        slug: "research-services",
+        category: "research",
+        categoryLabel: "Research",
+
+        description:
+            "Gain actionable insights with comprehensive market, industry, and academic research tailored to drive your business strategy.",
+
+        heroDescription:
+            "We deliver deep analytical insights and thorough research that empower businesses to make informed, strategic decisions.",
+
+        overview:
+            "Data is only as good as the insights you draw from it. We conduct comprehensive market, industry, and academic research to give your business a competitive edge and clear strategic direction.",
+
+        icon: "bi-search",
+
+        image:
+            "/images/hero-service-8.jpg",
+
+        offerings: [
+        "Market Research",
+        "Industry Analysis",
+        "Academic Research",
+        "Competitor Analysis",
+        "Data Collection",
+        "Strategic Insights"
+    ]
+    },
+
+
+    {
+        id: 2,
         title: "Logo & Brand Identity",
         slug: "logo-branding",
         category: "branding",
@@ -31,7 +64,7 @@ const serviceOfferedData = [
     },
 
     {
-        id: 2,
+        id: 3,
         title: "Graphic Design",
         slug: "graphic-design",
         category: "graphic-design",
@@ -62,7 +95,7 @@ const serviceOfferedData = [
     },
 
     {
-        id: 3,
+        id: 4,
         title: "Business Printing",
         slug: "business-printing",
         category: "printing",
@@ -93,7 +126,7 @@ const serviceOfferedData = [
     },
 
     {
-        id: 4,
+        id: 5,
         title: "Website Design & Development",
         slug: "website-design",
         category: "web-technology",
@@ -124,7 +157,7 @@ const serviceOfferedData = [
     },
 
     {
-        id: 5,
+        id: 6,
         title: "App Development",
         slug: "app-development",
         category: "web-technology",

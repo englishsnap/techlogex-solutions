@@ -26,6 +26,10 @@ const filters = [
         id: "web-technology",
         label: "Web & Technology",
     },
+     {
+        id: "research",
+        label: "Research",
+    },
 ];
 
 

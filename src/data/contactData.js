@@ -13,6 +13,13 @@ const contactData = {
         icon: "bi-envelope"
     },
 
+     address: {
+        label: "Address",
+        value: "PO BOX 99900 RZ 278 170 STN MAIN WINKLER, MB R6W 0G3",
+        href: "https://maps.google.com/?q=PO+BOX+99900+RZ+278+170+STN+MAIN+WINKLER+MB+R6W+0G3",
+        icon: "bi-geo-alt"
+    },
+
     socialLinks: [
         {
             id: 1,

@@ -1,4 +1,5 @@
 const fullPortfolioData = [
+    
     {
         id: 1,
         title: "Nova Coffee",
