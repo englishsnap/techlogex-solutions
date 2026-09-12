@@ -1,3 +1,5 @@
+import { Helmet } from "react-helmet-async";
+
 import AboutCTA from "../../components/AboutCTA";
 import AboutHero from "../../components/AboutHero";
 import AboutIntro from "../../components/AboutIntro";
@@ -8,6 +10,14 @@ import AboutOurValues from "../../components/AboutOurValues";
 function About(){
     return(
         <>
+        <Helmet>
+            <title>About Techlogex Solutions | Creative & Digital Solutions</title>
+                <meta
+                    name="description"
+                    content="Learn about Techlogex Solutions, our capabilities, creative process, and values in branding, design, printing, and digital solutions."
+                />
+        </Helmet>
+
            <AboutHero />
            <AboutIntro />
            <AboutCapabilities />
